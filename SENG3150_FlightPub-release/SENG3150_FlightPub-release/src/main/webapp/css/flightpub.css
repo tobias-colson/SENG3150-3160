@@ -1,0 +1,545 @@
+html {
+	height: 100%
+}
+body {
+	margin: 0;	/* Forces the document to take up the entire viewport, to ensure no strange gaps in displayed content */
+	padding: 0;
+	height: 100%;
+	background: linear-gradient(to right, #ffd000 , #ffd800);
+}
+
+#container {			/* Essentially a wrapper to contain all the other divisions, ensure other divisions space properly */
+	min-height: 100%;	/* Takes up the whole page */
+	position: relative;
+	overflow: hidden;	/* Stops the page creating a weird gap at the bottom */
+}
+
+#navheader {
+	background: #21262d;	/* Colour of header */
+	padding: 10px;			/* Ensures nothing encroaches it */
+	box-shadow: 0 0 8px black;
+}
+
+#body {
+	padding: 10px;			/* Same */
+	height: 100%;
+	padding-bottom: 60px;   /* Height of the footer */
+	color: white;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;			/* no matter the amount of content in the page */
+	width: 100%;		/* Goes the full page width */
+	height: 40px;   /* Height of the footer */
+	padding: 10px;
+	background-color: #21262d;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-style: italic;
+}
+
+#searchform {
+	margin-left: 25%;	/* Centers form div from margin */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+#assistedform {
+	margin-left: 25%;	/* Centers form div from margin */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+.filter {
+	height: 100%;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+	width: 240px;
+	background: #333333;
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 14px;
+	color: white;
+}
+
+#flights {
+	height: 100%;
+	margin-left: 250px;
+	margin-top: -10px;
+	padding: 20px 20px 20px 20px;
+	width: 60%;
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 16px;
+	font-weight: bold;
+	color: #222222;
+	background-color: #fefefe;
+	box-shadow: 0 0 8px black;
+}
+
+div.loginform {
+	margin: auto;	/* Centers form div from margin */
+	margin-top: 20px;
+	width: 30%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+div.recommended {
+	height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 20px;
+	width: 60%;
+	background-color: #ffd000;
+	box-shadow: 0 0 2px black;
+}
+
+div.details {
+	margin: auto;
+	margin-top: 20px;
+	padding: 20px;
+	width: 60%;
+	background-color: #ddeaff;
+	box-shadow: 0 0 2px black;
+}
+
+.resultHeader {
+	float: left;
+}
+
+.resultDetails {
+	margin-left: 45%;
+}
+
+#flightreview {
+	margin: auto;
+	margin-top: 50px;
+	width: 700px;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+.booking {
+	margin: auto;
+	width: 600px;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-weight: bold;
+	text-align: justify;
+	color: black;
+	border-radius: 2px;						/* Rounds border corners */
+	background-color: #f7f7f7;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+#totalcost {
+	margin: auto;
+	width: 600px;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-weight: bold;
+	text-align: justify;
+	color: black;
+	border-radius: 2px;						/* Rounds border corners */
+	background-color: #f7f7f7;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+#personaldetails {
+	margin: auto;	/* Centers form div from margin */
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 50%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+#successful {
+	margin: auto;
+	margin-top: 50px;
+	width: 30%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+.reviewform {
+	margin: auto;
+	margin-top: 50px;
+	width: 30%;			/* Centers from right margin */
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	border-radius: 5px;						/* Rounds border corners */
+	background-color: #21262d;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 8px black;
+}
+
+.group {
+	display: inline-block;
+}
+
+label {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 12em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+label.radio {
+	width: 5em;
+}
+
+input[type=text], select, [type=number], [type=date], [type=password] {				/* Makes the text box inputs pretty */
+	width: 200px;
+	padding: 8px 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-sizing: border-box;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+input[type=submit] {					/* Makes submit button pretty */
+	box-shadow: 0 8px 6px -6px black;
+	background-color: #049300;
+	font-size: 14px;
+	color: white;
+	padding: 12px;
+	margin: 8px 0px 8px 10px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;			/* Sets custom pointer over submit button */
+}
+
+input[type=submit]:hover {		/* Changes color of button on hover */
+	background-color: #047c00;
+}
+
+input[type=radio], input[type=checkbox] { /* Spaces out checkbox/radio buttons */
+	cursor: pointer;
+}
+
+input[type=button] {					/* Makes submit button pretty */
+	box-shadow: 0 0 2px black;
+	font-size: 16px;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;			/* Sets custom pointer over submit button */
+}
+
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;	/* Font/style used in div */
+	font-size: 32px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.steps {
+	padding-left: 10px;
+	font-size: 14px;
+	color: #222222;
+}
+
+.choose {
+	width: 150px;
+	background-color: #474747;
+}
+
+input.choose {
+	width: 150px;
+	background-color: #049300 !important;
+	margin: 8px 0px 8px 0px;
+}
+
+.choose:hover {
+	background-color: #555555;
+}
+
+input.home {
+	background-color: #049300;
+	width: 160px;
+}
+
+input.home:hover {
+	background-color: #047c00;
+}
+
+.goback {
+	background-color: #474747;
+	width: 200px;
+}
+
+.goback:hover {
+	background-color: #555555;
+}
+
+.goforward {
+	background-color: #049300;
+	width: 200px;
+}
+
+.goforward:hover {
+	background-color: #047c00;
+}
+
+a.home {
+	padding: 10px;
+	padding-top: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+a.home:hover {
+	background-color: grey;
+}
+
+#login {
+	padding: 10px;
+	padding-top: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+	float: right;
+}
+
+#login:hover {
+	background-color: grey;
+}
+
+#logout {
+	padding: 10px;
+	padding-top: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+	float: right;
+}
+
+#logout:hover {
+	background-color: grey;
+}
+
+#account {
+	padding: 10px;
+	padding-top: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+	float: right;
+}
+
+#account:hover {
+	background-color: grey;
+}
+
+p.error {
+	color: #ff0000;
+	font-style: italic;
+}
+
+#locations {
+	padding-left: 200px;
+}
+
+#results {
+	padding-left: 200px;
+}
+
+#update {
+	margin-top: 20px;
+}
+
+#sortby {
+	margin-left: 200px;
+}
+
+.filterheading {
+	margin-top: 2;
+	margin-bottom: 2;
+	font-size: 16px;
+}
+
+.airline {
+	margin: 10px;
+	padding-right: 30px;
+}
+
+.time {
+	padding-right: 20px;
+}
+
+.airports {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.cost {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+span.recommended {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#summaryheading {
+	font-size: 24px;
+}
+
+.formheading {
+	font-size: 18px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+.lilplane {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#register {
+	padding-left: 10px;
+	font-size: 12px;
+	font-style: italic;
+}
+/* Can change up the modal to make it look better */
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+}
+
+#review-modal-text {
+	width: 80%;
+	height: 50px;
+}
+
+/* The Close Button */
+.modal-close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-text {
+	color: black;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.card-payment-submit {
+	float: right;
+	margin-right: 15%;
+}
+
+input.flight-history {
+	background-color: #049300;
+	width: 200px;
+}
